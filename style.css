@@ -35,6 +35,7 @@ button:not(#btnigual){
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     font-size:25px;
+    color: black;
 }
 button:hover:not(.btnoperacion){
     background-color: rgb(224, 224, 224);
