@@ -14,7 +14,7 @@ const btndiv = document.querySelector("#btndiv");
 const btnparen1 = document.querySelector("#btnparen1");
 const btnparen2 = document.querySelector("#btnparen2");
 const btnigual = document.querySelector("#btnigual");
-let textbox = document.querySelector("#textbox");
+const textbox = document.querySelector("#textbox");
 let operacion;
 
 
