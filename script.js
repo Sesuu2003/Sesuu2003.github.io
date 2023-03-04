@@ -18,7 +18,7 @@ let textbox = document.querySelector("#textbox");
 let operacion;
 
 
-textbox.value = 2;
+textbox.innerHTML = 2;
 
 
 
