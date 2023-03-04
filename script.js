@@ -16,6 +16,7 @@ const btnparen1 = document.querySelector("#btnparen1");
 const btnparen2 = document.querySelector("#btnparen2");
 const btnigual = document.querySelector("#btnigual");
 const textbox = document.querySelector("#textbox");
+const btnC = document.querySelector("#btnC");
 let operacion = "";
 
 
@@ -28,18 +29,41 @@ btn6.onclick = () => escribirnumero(btn6);
 btn7.onclick = () => escribirnumero(btn7);
 btn8.onclick = () => escribirnumero(btn8);
 btn9.onclick = () => escribirnumero(btn9);
+btn0.onclick = () => escribirnumero(btn0);
 btnsuma.onclick = () => escribirnumero(btnsuma);
+btnresta.onclick = () => escribirnumero(btnresta);
+btnmult.onclick = () => escribirnumero(btnmult);
+btndiv.onclick = () => escribirnumero(btndiv);
+btnC.onclick = borraroperacion;
 btnigual.onclick = operar;
 
+// function escribirnumero(btn){
+//     operacion += btn.innerText;
+//     textbox.value = operacion;
+// }
+// function operar(){
+//     textbox.value = eval(operacion);
+//     operacion = textbox.value;
+// }
 function escribirnumero(btn){
-    operacion += btn.innerText;
-    textbox.value = operacion;
+    textbox.value += btn.innerText;
 }
 function operar(){
-    textbox.value = eval(operacion);
-    operacion = textbox.value;
+    operacion = eval(textbox.value);
+    textbox.value = operacion;
 }
+function borraroperacion(){
+    if(textbox.value == ""){
+        operacion = "";
+    }
+    else{
+        textbox.value = "";
+    }
+}
+// function borraroperacion(){
+//         textbox.value = "0";
 
+// }
 
 
 

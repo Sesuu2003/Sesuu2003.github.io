@@ -16,16 +16,16 @@ body{
     margin-bottom: 10px;
     border-width: 0px;
 }
-button:not(#btnigual){
+button{
     text-align: center;
     height: 50px;
     width: 50px;
 }
-#btnigual{
+/* #btnigual{
     height: 50px;
     width: 105px;
     border-bottom-right-radius: 10px;
-}
+} */
 #textbox{
     max-width: 265px;
     min-height: 80px;
@@ -50,4 +50,7 @@ button:hover:not(.btnoperacion){
 
 #btn0{
     border-bottom-left-radius: 10px;
+}
+#btnigual{
+    border-bottom-right-radius: 10px;
 }
