@@ -7,6 +7,7 @@ const btn6 = document.querySelector("#btn6");
 const btn7 = document.querySelector("#btn7");
 const btn8 = document.querySelector("#btn8");
 const btn9 = document.querySelector("#btn9");
+const botones = document.querySelector(".botones");
 const btnsuma = document.querySelector("#btnsuma");
 const btnresta = document.querySelector("#btnresta");
 const btnmult = document.querySelector("#btnmult");
@@ -15,10 +16,30 @@ const btnparen1 = document.querySelector("#btnparen1");
 const btnparen2 = document.querySelector("#btnparen2");
 const btnigual = document.querySelector("#btnigual");
 const textbox = document.querySelector("#textbox");
-let operacion;
+let operacion = "";
 
 
-textbox.value = "10;"
+btn1.onclick = () => escribirnumero(btn1);
+btn2.onclick = () => escribirnumero(btn2);
+btn3.onclick = () => escribirnumero(btn3);
+btn4.onclick = () => escribirnumero(btn4);
+btn5.onclick = () => escribirnumero(btn5);
+btn6.onclick = () => escribirnumero(btn6);
+btn7.onclick = () => escribirnumero(btn7);
+btn8.onclick = () => escribirnumero(btn8);
+btn9.onclick = () => escribirnumero(btn9);
+btnsuma.onclick = () => escribirnumero(btnsuma);
+btnigual.onclick = operar;
+
+function escribirnumero(btn){
+    operacion += btn.innerText;
+    textbox.value = operacion;
+}
+function operar(){
+    textbox.value = eval(operacion);
+    operacion = textbox.value;
+}
+
 
 
 
