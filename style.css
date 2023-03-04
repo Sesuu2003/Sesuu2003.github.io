@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(243, 230, 255);
+}
+.titulo{
+    font-family: 'Oswald', sans-serif;
+}
+.calculadora{
+    background-color: rgb(171, 204, 198);
+    width: 325px;
+    height: 370px;
+    border-radius: 20px;
+    margin: auto;
+}
+.calculadora button{
+    font-family:monospace;
+    margin-bottom: 10px;
+    border-width: 0px;
+}
+button:not(#btnigual){
+    text-align: center;
+    height: 50px;
+    width: 50px;
+}
+#btnigual{
+    height: 50px;
+    width: 105px;
+    border-bottom-right-radius: 10px;
+}
+#textbox{
+    max-width: 265px;
+    min-height: 80px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-size:25px;
+}
+button:hover:not(.btnoperacion){
+    background-color: rgb(224, 224, 224);
+}
+
+.btnoperacion{
+    background-color: rgb(255, 158, 141);
+}
+.btnoperacion:hover{
+    background-color: rgb(255, 127, 104);
+}
+
+#btn0{
+    border-bottom-left-radius: 10px;
+}
