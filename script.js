@@ -30,6 +30,8 @@ btn7.onclick = () => escribirnumero(btn7);
 btn8.onclick = () => escribirnumero(btn8);
 btn9.onclick = () => escribirnumero(btn9);
 btn0.onclick = () => escribirnumero(btn0);
+btnparen1.onclick = () => escribirnumero(btnparen1);
+btnparen2.onclick = () => escribirnumero(btnparen2);
 btnsuma.onclick = () => escribirnumero(btnsuma);
 btnresta.onclick = () => escribirnumero(btnresta);
 btnmult.onclick = () => escribirnumero(btnmult);
@@ -48,9 +50,19 @@ btnigual.onclick = operar;
 function escribirnumero(btn){
     textbox.value += btn.innerText;
 }
+// function operar(){
+//     operacion = eval(textbox.value);
+//     textbox.value = operacion;
+// }
 function operar(){
-    operacion = eval(textbox.value);
-    textbox.value = operacion;
+    if(eval(textbox.value) == null){
+        textbox.value = operacion;
+    }
+    else{
+        operacion = eval(textbox.value);
+        textbox.value = operacion;
+    }
+    
 }
 function borraroperacion(){
     if(textbox.value == ""){
